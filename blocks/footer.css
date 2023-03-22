@@ -1,0 +1,38 @@
+.footer {
+  margin: 67px auto 60px;
+}
+
+.footer__text {
+  color: #545454;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media screen and (max-width: 880px) {
+  .footer {
+    padding: 57px 40px 45px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .footer__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 48px 20px 36px;
+  }
+
+  .footer__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

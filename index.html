@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cristian Martinez Vega" />
+    <meta
+      name="description"
+      content="This is the third project of Practicum's Software Engineering program. Welcome and hope you like my work."
+    />
+    <meta
+      name="keywords"
+      content="Grid, Responsive Design, Flexbox, HTML, CSS"
+    />
+    <title>Around the U.S.</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  </head>
+
+  <body class="page">
+    <div class="page__content">
+      <header class="header page__section">
+        <img
+          src="./images/logo.svg"
+          alt="Around the U.S. Logo"
+          class="header__Logo"
+        />
+      </header>
+
+      <main class="content">
+        <section class="profile page__section">
+          <img
+            src="./images/jacques-cousteau.jpg"
+            alt="Avatar"
+            class="profile__image"
+          />
+          <div class="profile__info">
+            <h1 class="profile__title">Jacques Cousteau</h1>
+            <button
+              class="profile__edit-button"
+              type="button"
+              aria-label="edit"
+            ></button>
+            <p class="profile__description">Explorer</p>
+          </div>
+          <button
+            class="profile__add-button"
+            type="button"
+            aria-label="add"
+          ></button>
+        </section>
+
+        <section class="gallery page__section">
+          <ul class="gallery__cards">
+            <li class="card">
+              <img
+                class="card__image"
+                src="./images/yosemite.jpg"
+                alt="A photo of Yosemite Valley with a mountain in the distance, pine trees, and a river."
+              />
+              <div class="card__description">
+                <h2 class="card__title">Yosemite Valley</h2>
+                <button
+                  class="card__like-button"
+                  type="button"
+                  aria-label="like"
+                ></button>
+              </div>
+            </li>
+
+            <li class="card">
+              <img
+                class="card__image"
+                src="./images/lake-louise.jpg"
+                alt="A beautiful photo of Lake Louise with mountains and an open sky"
+              />
+              <div class="card__description">
+                <h2 class="card__title">Lake Louise</h2>
+                <button
+                  class="card__like-button"
+                  type="button"
+                  aria-label="like"
+                ></button>
+              </div>
+            </li>
+
+            <li class="card">
+              <img
+                class="card__image"
+                src="./images/bald-mountains.jpg"
+                alt="A photo of Bald Mountains taken while the sun is seeting or rising in the hills"
+              />
+              <div class="card__description">
+                <h2 class="card__title">Bald Mountains</h2>
+                <button
+                  class="card__like-button"
+                  type="button"
+                  aria-label="like"
+                ></button>
+              </div>
+            </li>
+
+            <li class="card">
+              <img
+                class="card__image"
+                src="./images/latemar.jpg"
+                alt="A night photo of Latemar with the sky full of stars and the rugged mountains lightly covered with snow."
+              />
+              <div class="card__description">
+                <h2 class="card__title">Latemar</h2>
+                <button
+                  class="card__like-button"
+                  type="button"
+                  aria-label="like"
+                ></button>
+              </div>
+            </li>
+
+            <li class="card">
+              <img
+                class="card__image"
+                src="./images/vanoise.jpg"
+                alt="A photo of the Vanoise National Park with a calm lake, clear sky and mountains."
+              />
+              <div class="card__description">
+                <h2 class="card__title">Vanoise National Park</h2>
+                <button
+                  class="card__like-button"
+                  type="button"
+                  aria-label="like"
+                ></button>
+              </div>
+            </li>
+
+            <li class="card">
+              <img
+                class="card__image"
+                src="./images/lago-di-braies.png"
+                alt="A beautiful photo of Lago di Braies with a house with two boats on a lake by the mountains and with clear sky."
+              />
+              <div class="card__description">
+                <h2 class="card__title">Lago di Braies</h2>
+                <button
+                  class="card__like-button"
+                  type="button"
+                  aria-label="like"
+                ></button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer page__section">
+        <p class="footer__text">© 2023 Around the U.S.</p>
+      </footer>
+    </div>
+  </body>
+</html>
