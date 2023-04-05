@@ -1,4 +1,4 @@
-Project Name: Around The U.S. (Practicum's project 3)
+# Project Name: Around The U.S.
 
 Description:
 
@@ -11,13 +11,11 @@ Technologies and techniques used:
 - Positioning
 - BEM naming
   -Figma
+- JavaScript
 
-=  
-**Figma**
+=
 
-- [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)
-
-**Images**
+- [Link to the project on Figma](https://www.figma.com/file/mUgu8OSHWE0M6p6vfwmdu9/Sprint-4%3A-Around-The-U.S.-%2F-desktop-%2B-mobile?node-id=0%3A1&t=khEn5abwGLe6S9rD-1)
 
 ![Image of the project](./images/readmephoto.png)
 

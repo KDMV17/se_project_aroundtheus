@@ -41,6 +41,7 @@
               class="profile__edit-button"
               type="button"
               aria-label="edit"
+              id="profile-edit-button"
             ></button>
             <p class="profile__description">Explorer</p>
           </div>
@@ -52,103 +53,7 @@
         </section>
 
         <section class="gallery page__section">
-          <ul class="gallery__cards">
-            <li class="card">
-              <img
-                class="card__image"
-                src="./images/yosemite.jpg"
-                alt="A photo of Yosemite Valley with a mountain in the distance, pine trees, and a river."
-              />
-              <div class="card__description">
-                <h2 class="card__title">Yosemite Valley</h2>
-                <button
-                  class="card__like-button"
-                  type="button"
-                  aria-label="like"
-                ></button>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                class="card__image"
-                src="./images/lake-louise.jpg"
-                alt="A beautiful photo of Lake Louise with mountains and an open sky"
-              />
-              <div class="card__description">
-                <h2 class="card__title">Lake Louise</h2>
-                <button
-                  class="card__like-button"
-                  type="button"
-                  aria-label="like"
-                ></button>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                class="card__image"
-                src="./images/bald-mountains.jpg"
-                alt="A photo of Bald Mountains taken while the sun is seeting or rising in the hills"
-              />
-              <div class="card__description">
-                <h2 class="card__title">Bald Mountains</h2>
-                <button
-                  class="card__like-button"
-                  type="button"
-                  aria-label="like"
-                ></button>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                class="card__image"
-                src="./images/latemar.jpg"
-                alt="A night photo of Latemar with the sky full of stars and the rugged mountains lightly covered with snow."
-              />
-              <div class="card__description">
-                <h2 class="card__title">Latemar</h2>
-                <button
-                  class="card__like-button"
-                  type="button"
-                  aria-label="like"
-                ></button>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                class="card__image"
-                src="./images/vanoise.jpg"
-                alt="A photo of the Vanoise National Park with a calm lake, clear sky and mountains."
-              />
-              <div class="card__description">
-                <h2 class="card__title">Vanoise National Park</h2>
-                <button
-                  class="card__like-button"
-                  type="button"
-                  aria-label="like"
-                ></button>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                class="card__image"
-                src="./images/lago-di-braies.png"
-                alt="A beautiful photo of Lago di Braies with a house with two boats on a lake by the mountains and with clear sky."
-              />
-              <div class="card__description">
-                <h2 class="card__title">Lago di Braies</h2>
-                <button
-                  class="card__like-button"
-                  type="button"
-                  aria-label="like"
-                ></button>
-              </div>
-            </li>
-          </ul>
+          <ul class="gallery__cards"></ul>
         </section>
       </main>
 
@@ -156,5 +61,45 @@
         <p class="footer__text">© 2023 Around the U.S.</p>
       </footer>
     </div>
+
+    <div class="modal" id="profile-edit-modal">
+      <div class="modal__container">
+        <button class="modal__close"></button>
+        <h3 class="modal__heading">Edit Profile</h3>
+        <form class="modal__form">
+          <input
+            type="text"
+            name="title"
+            class="modal__form-input"
+            placeholder="Jacques Cousteau"
+            id="profile-title-input"
+          />
+          <input
+            type="text"
+            name="description"
+            class="modal__form-input"
+            placeholder="Explorer"
+            id="profile-description-input"
+          />
+          <button class="modal__button">Save</button>
+        </form>
+      </div>
+    </div>
+
+    <template id="card-template">
+      <li class="card">
+        <img class="card__image" src="" alt="" />
+        <div class="card__description">
+          <h2 class="card__title"></h2>
+          <button
+            class="card__like-button"
+            type="button"
+            aria-label="like"
+          ></button>
+        </div>
+      </li>
+    </template>
+
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
