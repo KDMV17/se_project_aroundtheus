@@ -140,13 +140,8 @@
 }
 
 .modal__container-image {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* margin: auto; */
   position: relative;
   margin: auto;
-  /* justify-content: center; */
-  /* margin-bottom: 26.74px; */
   padding-bottom: 13.26px;
 }
 
