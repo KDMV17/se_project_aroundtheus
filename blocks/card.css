@@ -5,12 +5,10 @@
   flex-direction: column;
   list-style-type: none;
   position: relative;
-  overflow: hidden;
 }
 
 .card__image {
   max-width: 282px;
-  max-height: 282px;
   object-fit: cover;
   cursor: pointer;
   min-height: 282px;

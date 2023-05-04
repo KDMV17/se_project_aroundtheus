@@ -56,10 +56,8 @@ const profileEditForm = profileEditModal.querySelector(".modal__form");
 const cardListEl = document.querySelector(".gallery__cards");
 const cardTemplate =
   document.querySelector("#card-template").content.firstElementChild;
-const cardTitleInput = profileAddModal.querySelector(
-  ".modal__input_type_title"
-);
-const cardUrlInput = profileAddModal.querySelector(".modal__input_type_url");
+const cardTitleInput = profileAddModal.querySelector(".modal__form-title");
+const cardUrlInput = profileAddModal.querySelector(".modal__form-url");
 
 // // Preview Image
 
