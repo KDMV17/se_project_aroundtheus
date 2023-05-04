@@ -133,3 +133,31 @@
     line-height: 17px;
   }
 }
+
+.modal__container-image {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  position: relative;
+  margin-bottom: 26.74px;
+  padding-bottom: 13.26px;
+}
+
+.modal__image {
+  max-width: 75vw;
+  max-height: 75vh;
+  object-fit: cover;
+  display: flex;
+  border-radius: 0;
+}
+
+.modal__preview-caption {
+  font-size: 12px;
+  line-height: 1.2;
+  color: #fff;
+  padding: 0;
+  margin: 10px 0 0;
+  font-weight: 400;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+}

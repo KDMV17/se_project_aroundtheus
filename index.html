@@ -28,6 +28,8 @@
         />
       </header>
 
+      <!-- Profile Section-->
+
       <main class="content">
         <section class="profile page__section">
           <img
@@ -49,8 +51,11 @@
             class="profile__add-button"
             type="button"
             aria-label="add"
+            id="profile-add-button"
           ></button>
         </section>
+
+        <!-- Cards Gallery-->
 
         <section class="gallery page__section">
           <ul class="gallery__cards"></ul>
@@ -62,32 +67,95 @@
       </footer>
     </div>
 
+    <!-- Edit modal-->
+
     <div class="modal" id="profile-edit-modal">
       <div class="modal__container">
-        <button class="modal__close"></button>
+        <button class="modal__close" id="profile-edit-close"></button>
         <h3 class="modal__heading">Edit Profile</h3>
-        <form class="modal__form">
+        <form class="modal__form" id="edit-card-form">
           <input
             type="text"
             name="title"
             class="modal__form-input"
             placeholder="Jacques Cousteau"
-            id="profile-title-input"
+            id="edit-title-input"
           />
           <input
             type="text"
             name="description"
             class="modal__form-input"
             placeholder="Explorer"
-            id="profile-description-input"
+            id="edit-description-input"
           />
           <button class="modal__button">Save</button>
         </form>
       </div>
     </div>
 
+    <!-- Add card modal-->
+
+    <div class="modal" id="profile-add-modal">
+      <div class="modal__container">
+        <button class="modal__close" id="profile-add-close"></button>
+        <h3 class="modal__heading">New Place</h3>
+        <form class="modal__form" id="add-card-form">
+          <input
+            type="text"
+            name="title"
+            class="modal__form-input modal__input_type_title"
+            placeholder="Title"
+            id="add-title-input"
+          />
+          <input
+            type="text"
+            name="url"
+            class="modal__form-input modal__input_type_url"
+            placeholder="Image URL"
+            id="add-description-input"
+          />
+          <button class="modal__button">Create</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Full Image modal -->
+
+    <!-- <div class="modal" id="modal-preview-image">
+      <div class="modal__container-image">
+        <button
+          class="modal__close"
+          id="preview-modal-close"
+          type="button"
+          aria-label="Modal Close Button"
+        ></button>
+        <img
+          src="#"
+          alt="Full Image View"
+          class="modal__image"
+          id="card-preview-image"
+        />
+        <p class="modal__preview-caption" id="card-preview-caption"></p>
+      </div>
+    </div> -->
+
+    <div class="modal" id="modal-preview-image">
+      <div class="modal__container-image">
+        <button class="modal__close" type="button"></button>
+        <img src="#" class="modal__image" alt="#" />
+        <p class="modal__preview-caption"></p>
+      </div>
+    </div>
+
+    <!-- Cards Template-->
+
     <template id="card-template">
       <li class="card">
+        <button
+          class="card__delete-button"
+          type="button"
+          aria-label="Trash"
+        ></button>
         <img class="card__image" src="" alt="" />
         <div class="card__description">
           <h2 class="card__title"></h2>
