@@ -77,17 +77,29 @@
           <input
             type="text"
             name="title"
-            class="modal__form-input"
+            class="modal__input modal__form-url"
             placeholder="Jacques Cousteau"
             id="edit-title-input"
+            minlength="2"
+            maxlength="40"
+            required
           />
+          <span class="modal__form-error" id="edit-title-input-error"></span>
+
           <input
             type="text"
             name="description"
-            class="modal__form-input"
+            class="modal__input modal__form-url"
             placeholder="Explorer"
             id="edit-description-input"
+            minlength="2"
+            maxlength="40"
+            required
           />
+          <span
+            class="modal__form-error"
+            id="edit-description-input-error"
+          ></span>
           <button class="modal__button">Save</button>
         </form>
       </div>
@@ -103,18 +115,32 @@
           <input
             type="text"
             name="title"
-            class="modal__form-input modal__form-title"
+            class="modal__input modal__form-url modal__form-title"
             placeholder="Title"
             id="add-title-input"
+            minlength="1"
+            maxlength="30"
+            required
           />
+
+          <span class="modal__form-error" id="add-title-input-error"></span>
+
           <input
-            type="text"
+            type="url"
             name="url"
-            class="modal__form-input modal__form-url"
+            class="modal__input modal__form-url modal__form-url"
             placeholder="Image URL"
             id="add-description-input"
+            required
           />
-          <button class="modal__button">Create</button>
+          <span
+            class="modal__form-error"
+            id="add-description-input-error"
+          ></span>
+
+          <button class="modal__button modal__button_disabled" disabled>
+            Create
+          </button>
         </form>
       </div>
     </div>
@@ -151,5 +177,6 @@
     </template>
 
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/Validation.js"></script>
   </body>
 </html>
